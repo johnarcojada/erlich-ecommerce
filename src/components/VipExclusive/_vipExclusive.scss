@@ -1,0 +1,35 @@
+@import 'assets/styles/_theme.scss';
+
+.vip-exclusive-section {
+  background-color: $black;
+  padding: pxToRem(24px);
+  background: url('assets/images/vip-exclusive-banner-bg.png') no-repeat center /
+    cover;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: pxToRem(16px);
+  }
+  & span {
+    color: $white;
+    text-transform: uppercase;
+  }
+  & .vip-section-header {
+    font-size: pxToRem(32px);
+    font-weight: map-get($font-weight, bold);
+    grid-column: span 4 / span 4;
+  }
+  & .vip-section-subheader {
+    grid-column: span 4 / span 4;
+    font-size: pxToRem(18px);
+  }
+  &__button {
+    grid-column: span 4 / span 4;
+    display: flex;
+    justify-content: center;
+  }
+}
