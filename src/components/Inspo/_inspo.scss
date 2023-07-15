@@ -1,0 +1,28 @@
+@import 'assets/styles/_theme.scss';
+
+.inspo-section {
+  padding: pxToRem(72px) pxToRem(24px);
+  background-color: $gray;
+  &__header {
+    margin-bottom: pxToRem(48px);
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+  &__title {
+    font-size: pxToRem(36px);
+    margin-bottom: pxToRem(40px);
+    margin-top: 0;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: pxToRem(40px);
+    margin-bottom: pxToRem(32px);
+  }
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

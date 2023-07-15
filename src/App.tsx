@@ -6,6 +6,7 @@ import VipExclusive from 'components/VipExclusive';
 import Trending from 'components/Trending';
 import NewArrivals from 'components/NewArrivals';
 import RecentlyBought from 'components/RecentlyBought';
+import Inspo from 'components/Inspo';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <Trending />
       <NewArrivals />
       <RecentlyBought />
+      <Inspo />
     </>
   );
 };
