@@ -1,0 +1,17 @@
+@import 'assets/styles/_theme.scss';
+
+.recently-bought-section {
+  padding: pxToRem(40px);
+  max-width: 1800px;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+    font-size: pxToRem(36px) pxToRem(48px);
+    margin-bottom: pxToRem(40px);
+  }
+  &__product-list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: pxToRem(40px);
+  }
+}

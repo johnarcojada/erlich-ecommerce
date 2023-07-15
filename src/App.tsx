@@ -5,6 +5,7 @@ import Deals from 'components/Deals';
 import VipExclusive from 'components/VipExclusive';
 import Trending from 'components/Trending';
 import NewArrivals from 'components/NewArrivals';
+import RecentlyBought from 'components/RecentlyBought';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <VipExclusive />
       <Trending />
       <NewArrivals />
+      <RecentlyBought />
     </>
   );
 };

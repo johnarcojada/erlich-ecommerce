@@ -25,6 +25,11 @@ import WhiteDresses from './item-images/white-dress.jpg';
 import Sweaters from './item-images/sweaters.jpg';
 import Party from './item-images/party.jpg';
 import NewArrivalsBg from './new-arrival-bg.jpg';
+import RecentlyBought1 from './item-images/festive-looks-long-sleeve.jpg';
+import RecentlyBought2 from './item-images/cross-body-bag.jpg';
+import RecentlyBought3 from './item-images/manila-tan-scarf.jpg';
+import RecentlyBought4 from './item-images/diamante-puff-sleeve-dress.jpg';
+import RecentlyBought5 from './item-images/banneth-open-front-formal-dress.jpg';
 
 export {
   Logo,
@@ -54,4 +59,9 @@ export {
   Sweaters,
   Party,
   NewArrivalsBg,
+  RecentlyBought1,
+  RecentlyBought2,
+  RecentlyBought3,
+  RecentlyBought4,
+  RecentlyBought5,
 };

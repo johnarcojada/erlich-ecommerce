@@ -1,0 +1,27 @@
+@import 'assets/styles/_theme.scss';
+
+.product-card {
+  &__image {
+    display: block;
+    width: 100%;
+    margin-bottom: pxToRem(12px);
+  }
+  &__name {
+    font-size: pxToRem(14px);
+  }
+  &__price-wrapper {
+    display: flex;
+    padding-top: pxToRem(8px);
+    gap: pxToRem(32px);
+  }
+  &__price,
+  &__discount {
+    font-weight: map-get($font-weight, semibold);
+  }
+  &__price {
+    color: $red;
+  }
+  &__discount {
+    text-decoration: line-through;
+  }
+}
