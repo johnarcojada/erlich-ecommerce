@@ -21,3 +21,29 @@ $font-weight: (
   semibold: 600,
   bold: 800,
 );
+
+$hero-top-padding: pxToRem(72px);
+$hero-ribbon-padding: pxToRem(56px);
+
+// Media query mixin
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: 992px) and (max-width: 1279px) {
+      @content;
+    }
+  } @else if $breakpoint == largeDesktop {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else {
+    @warn "Invalid breakpoint specified: #{$breakpoint}";
+  }
+}

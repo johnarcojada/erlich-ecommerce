@@ -1,0 +1,59 @@
+@import 'assets/styles/_theme.scss';
+
+.hero {
+  height: calc(100vh);
+  padding-top: $hero-top-padding;
+  position: relative;
+  &__hero-ribbon {
+    background-color: $gray;
+    padding: pxToRem(10px) pxToRem(36px);
+    display: flex;
+    justify-content: space-between;
+    gap: pxToRem(24px);
+  }
+  &__hero-ribbon-item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: pxToRem(16px);
+  }
+  &__hero-bg-desktop {
+    height: calc(100% - $hero-ribbon-padding);
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  &__hero-promo-container {
+    position: absolute;
+    top: 0;
+    right: 8%;
+    z-index: 1;
+    height: 100%;
+    padding-top: pxToRem(160px);
+  }
+  &__hero-promo-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__hero-promo-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: pxToRem(64px);
+  }
+  &__hero-slider-nav {
+    & .slider-nav-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      transform: translate(-50%);
+      cursor: pointer;
+      display: block;
+      &.prev {
+        left: pxToRem(48px);
+      }
+      &.next {
+        right: pxToRem(24px);
+      }
+    }
+  }
+}
