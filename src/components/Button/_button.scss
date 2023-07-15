@@ -18,18 +18,18 @@
   &--small {
     font-size: pxToRem(14px);
     padding: pxToRem(8px) pxToRem(16px);
-    font-weight: 500;
+    font-weight: map-get($font-weight, medium);
   }
 
   &--medium {
     font-size: pxToRem(18px);
     padding: pxToRem(10px) pxToRem(20px);
-    font-weight: 500;
+    font-weight: map-get($font-weight, medium);
   }
 
   &--large {
     font-size: pxToRem(36px);
     padding: pxToRem(15px) pxToRem(30px);
-    font-weight: 600;
+    font-weight: map-get($font-weight, semibold);
   }
 }
