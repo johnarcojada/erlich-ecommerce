@@ -4,6 +4,7 @@ import Navbar from 'components/Navbar';
 import Deals from 'components/Deals';
 import VipExclusive from 'components/VipExclusive';
 import Trending from 'components/Trending';
+import NewArrivals from 'components/NewArrivals';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Deals />
       <VipExclusive />
       <Trending />
+      <NewArrivals />
     </>
   );
 };
