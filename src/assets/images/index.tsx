@@ -24,6 +24,7 @@ import Outerwear from './item-images/outwear.jpg';
 import WhiteDresses from './item-images/white-dress.jpg';
 import Sweaters from './item-images/sweaters.jpg';
 import Party from './item-images/party.jpg';
+import NewArrivalsBg from './new-arrival-bg.jpg';
 
 export {
   Logo,
@@ -52,4 +53,5 @@ export {
   WhiteDresses,
   Sweaters,
   Party,
+  NewArrivalsBg,
 };
