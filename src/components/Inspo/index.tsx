@@ -26,7 +26,7 @@ const Inspo: React.FC = () => {
       </div>
       <div {...className('body')}>
         {inspoImgs.map(image => (
-          <div>
+          <div {...className('inspo-image-wrapper')}>
             <img src={image} alt="Inspo Image" />
           </div>
         ))}
