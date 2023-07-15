@@ -30,6 +30,11 @@ import RecentlyBought2 from './item-images/cross-body-bag.jpg';
 import RecentlyBought3 from './item-images/manila-tan-scarf.jpg';
 import RecentlyBought4 from './item-images/diamante-puff-sleeve-dress.jpg';
 import RecentlyBought5 from './item-images/banneth-open-front-formal-dress.jpg';
+import InstaImg1 from './item-images/insta-img-1.jpg';
+import InstaImg2 from './item-images/insta-img-2.jpg';
+import InstaImg3 from './item-images/insta-img-3.jpg';
+import InstaImg4 from './item-images/insta-img-4.jpg';
+import InstaImg5 from './item-images/insta-img-5.jpg';
 
 export {
   Logo,
@@ -64,4 +69,9 @@ export {
   RecentlyBought3,
   RecentlyBought4,
   RecentlyBought5,
+  InstaImg1,
+  InstaImg2,
+  InstaImg3,
+  InstaImg4,
+  InstaImg5,
 };
