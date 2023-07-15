@@ -1,0 +1,11 @@
+@import 'assets/styles/_theme.scss';
+
+.tag {
+  border-radius: 999px;
+  padding: pxToRem(10px) pxToRem(20px);
+  display: inline-block;
+  border: 1px solid $black;
+  cursor: pointer;
+  font-weight: map-get($font-weight, semibold);
+  user-select: none;
+}
