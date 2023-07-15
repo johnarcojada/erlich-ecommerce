@@ -16,6 +16,14 @@ import IconLocation from './icon-location.svg';
 import IconTag from './icon-tag.svg';
 import IconChevronLeftWhite from './icon-chevron-left-white.svg';
 import IconChevronRightWhite from './icon-chevron-right-white.svg';
+import WinterFashion from './item-images/winter-fashion.jpg';
+import Boots from './item-images/boots.jpg';
+import NightOut from './item-images/night-out.jpg';
+import Holidays from './item-images/holidays.jpg';
+import Outerwear from './item-images/outwear.jpg';
+import WhiteDresses from './item-images/white-dress.jpg';
+import Sweaters from './item-images/sweaters.jpg';
+import Party from './item-images/party.jpg';
 
 export {
   Logo,
@@ -36,4 +44,12 @@ export {
   IconTag,
   IconChevronLeftWhite,
   IconChevronRightWhite,
+  WinterFashion,
+  Boots,
+  NightOut,
+  Holidays,
+  Outerwear,
+  WhiteDresses,
+  Sweaters,
+  Party,
 };

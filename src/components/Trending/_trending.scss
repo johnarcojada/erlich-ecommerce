@@ -1,0 +1,23 @@
+@import 'assets/styles/_theme.scss';
+
+.trending-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: pxToRem(40px) pxToRem(32px);
+  &__header {
+    margin-bottom: pxToRem(48px);
+  }
+  &__header-title,
+  &__header-subtitle {
+    text-align: center;
+  }
+  &__header-title {
+    text-transform: uppercase;
+    font-size: pxToRem(36px);
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: pxToRem(40px);
+  }
+}
