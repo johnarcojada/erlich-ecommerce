@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-between;
   gap: pxToRem(16px);
+  background-color: $white;
+  z-index: 99;
 
   &__left-nav {
     display: flex;
