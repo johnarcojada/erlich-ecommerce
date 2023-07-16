@@ -32,4 +32,19 @@
     padding: pxToRem(15px) pxToRem(30px);
     font-weight: map-get($font-weight, semibold);
   }
+
+  &--rounded {
+    border-radius: pxToRem(4px);
+  }
+
+  &--white-bordered {
+    text-transform: initial;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $black;
+  }
+
+  &--is-payment {
+    padding: 0 pxToRem(20px);
+  }
 }

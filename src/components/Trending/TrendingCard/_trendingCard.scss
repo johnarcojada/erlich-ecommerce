@@ -1,0 +1,19 @@
+@import 'assets/styles/_theme.scss';
+
+.trending-card {
+  grid-column: span 3 / span 3;
+  cursor: pointer;
+  &__image {
+    display: block;
+    width: 100%;
+    user-select: none;
+  }
+  &__name {
+    text-transform: uppercase;
+    font-size: pxToRem(24px);
+    padding: pxToRem(16px) 0;
+    text-align: center;
+    display: block;
+    font-weight: map-get($font-weight, semibold);
+  }
+}

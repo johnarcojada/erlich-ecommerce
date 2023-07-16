@@ -4,3 +4,11 @@ body,
 html {
   font-family: $font-family;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}

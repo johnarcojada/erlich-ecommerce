@@ -1,0 +1,38 @@
+@import 'assets/styles/_theme.scss';
+
+.deals-section {
+  padding: pxToRem(45px) pxToRem(68px);
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: pxToRem(32px);
+
+  &__deals-item-wrapper {
+    grid-column: span 9 / span 9;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  &__deals-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__deals-item-label {
+    display: flex;
+    align-items: center;
+    font-weight: map-get($font-weight, semibold);
+    margin-bottom: pxToRem(8px);
+    & .deals-item-label-price {
+      font-size: pxToRem(32px);
+      margin-right: pxToRem(8px);
+    }
+  }
+  &__deals-item-description {
+    text-transform: uppercase;
+    font-size: pxToRem(12px);
+  }
+  &__deals-item-button {
+    grid-column: span 3 / span 3;
+    display: flex;
+    align-items: center;
+  }
+}

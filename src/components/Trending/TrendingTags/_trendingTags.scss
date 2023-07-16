@@ -1,0 +1,13 @@
+@import 'assets/styles/_theme.scss';
+
+.trending-tags-section {
+  padding: pxToRem(24px);
+  display: flex;
+  justify-content: center;
+  &__wrapper {
+    & .tag-wrapper {
+      display: inline-block;
+      padding: pxToRem(16px);
+    }
+  }
+}
