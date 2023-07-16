@@ -5,20 +5,29 @@ import Button from 'components/Button';
 import { IconBag } from 'assets/images';
 
 interface Props {
+  product_id: number;
   name: string;
   image: string;
   price: number;
   discount: number;
+  onClick: (id: number) => void;
 }
 
 const className = BEMHelper('product-card');
 
-const ProductCard: React.FC<Props> = ({ image, name, price, discount }) => {
+const ProductCard: React.FC<Props> = ({
+  product_id,
+  image,
+  name,
+  price,
+  discount,
+  onClick,
+}) => {
   return (
     <div {...className('')}>
       <div {...className('product-wrapper')}>
         <div {...className('product-wrapper-hover')}>
-          <Button variant="white">
+          <Button variant="white" onClick={() => onClick(product_id)}>
             <div {...className('button-wrapper')}>
               <img src={IconBag} alt="Icon Bag" />
               Add to Bag

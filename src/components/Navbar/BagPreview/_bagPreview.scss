@@ -9,6 +9,8 @@
   right: pxToRem(-24px);
   border: 1px solid $gray;
   width: pxToRem(360px);
+  max-height: calc(100vh - pxToRem(120px));
+  overflow: auto;
 
   &__item {
     display: grid;
