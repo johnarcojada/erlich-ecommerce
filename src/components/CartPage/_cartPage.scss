@@ -1,0 +1,208 @@
+@import 'assets/styles/_theme.scss';
+
+.cart-page {
+  width: 100%;
+  padding: pxToRem(32px);
+  max-width: 1440px;
+  margin: 0 auto;
+  &__header {
+    margin-bottom: pxToRem(32px);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header-title {
+    text-transform: uppercase;
+    margin-bottom: pxToRem(8px);
+    font-size: pxToRem(18px);
+    font-weight: map-get($font-weight, bold);
+  }
+  &__header-contact,
+  &__header-subtitle {
+    font-size: pxToRem(14px);
+    a {
+      color: $black;
+    }
+  }
+  &__header-contact-chat-wrapper {
+    a {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  &__main-section {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: pxToRem(32px);
+  }
+
+  // Order List Section
+
+  &__order-list {
+    grid-column: span 8 / span 8;
+  }
+  &__order-list-header {
+    margin-bottom: pxToRem(16px);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray;
+    padding-bottom: pxToRem(4px);
+    span {
+      font-weight: map-get($font-weight, semibold);
+      font-size: pxToRem(14px);
+      text-transform: uppercase;
+    }
+  }
+  &__order-list-item {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: pxToRem(24px);
+    border-bottom: 1px solid $gray;
+    padding-bottom: pxToRem(16px);
+  }
+  &__order-list-item-image-wrapper {
+    grid-column: span 3 / span 3;
+    img {
+      width: 100%;
+    }
+  }
+  &__order-list-item-details-wrapper {
+    grid-column: span 9 / span 9;
+  }
+  &__order-list-item-details-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__order-list-item-badge {
+    padding: pxToRem(8px);
+    background-color: $palePink;
+    border-radius: pxToRem(8px);
+    display: flex;
+    align-items: center;
+    gap: pxToRem(4px);
+    margin-bottom: pxToRem(12px);
+    img {
+      filter: brightness(0);
+    }
+    span {
+      font-size: pxToRem(12px);
+    }
+  }
+  &__order-list-item-badge-text {
+    font-weight: map-get($font-weight, semibold);
+    text-transform: uppercase;
+  }
+  &__order-list-price {
+    font-size: pxToRem(14px);
+    font-weight: map-get($font-weight, semibold);
+  }
+
+  &__order-list-item-detail-name {
+    font-weight: map-get($font-weight, semibold);
+  }
+  &__order-list-item-detail-brand,
+  &__order-list-item-detail-attributes {
+    font-weight: map-get($font-weight, medium);
+  }
+
+  &__order-list-item-detail-name,
+  &__order-list-item-detail-brand,
+  &__order-list-item-detail-attributes {
+    margin-top: pxToRem(10px);
+  }
+  &__order-list-item-detail-name,
+  &__order-list-item-detail-brand,
+  &__order-list-item-detail-attributes,
+  &__order-list-item-detail-style {
+    display: block;
+    font-size: pxToRem(14px);
+  }
+  &__order-list-item-detail-style {
+    font-size: pxToRem(12px);
+    color: $darkGray;
+    margin-top: pxToRem(18px);
+    margin-bottom: pxToRem(18px);
+  }
+
+  &__order-list-footer {
+    a {
+      display: inline-block;
+      margin-right: pxToRem(8px);
+      font-size: pxToRem(12px);
+      color: $darkGray;
+    }
+  }
+  &__order-list-payment-methods {
+    margin-top: pxToRem(16px);
+    p {
+      font-size: pxToRem(14px);
+      margin-bottom: pxToRem(16px);
+    }
+  }
+  &__order-list-footer-payment-icons {
+    img {
+      display: inline-block;
+      margin-right: pxToRem(4px);
+      border: 1px solid $gray;
+      height: pxToRem(20px);
+    }
+  }
+
+  // Order Summary Section
+
+  &__order-summary-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: map-get($font-weight, semibold);
+    margin-bottom: pxToRem(24px);
+    font-size: pxToRem(14px);
+  }
+  &__order-summary-subtotal {
+    border-bottom: 1px solid $gray;
+    margin-bottom: pxToRem(24px);
+    padding-bottom: pxToRem(12px);
+  }
+  &__order-summary-subtotal,
+  &__order-summary-total {
+    font-weight: map-get($font-weight, medium);
+  }
+  &__order-summary-subtotal-detail,
+  &__order-summary-free-shipping,
+  &__order-summary-estimated-total {
+    margin-bottom: pxToRem(12px);
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $black;
+    }
+  }
+  &__order-summary-vat-text {
+    text-align: center;
+    font-size: pxToRem(14px);
+    color: $red;
+  }
+  &__order-summary-section {
+    grid-column: span 4 / span 4;
+  }
+  &__order-summary {
+    border: 1px solid $black;
+    padding: pxToRem(20px);
+    margin-bottom: pxToRem(8px);
+  }
+  &__order-list-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__order-summary-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: pxToRem(8px);
+  }
+  &__paypal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: pxToRem(4px);
+  }
+}

@@ -37,8 +37,6 @@ const Navbar: React.FC = () => {
     },
   ];
 
-  const onBagIconClick = () => {};
-
   return (
     <div {...className('')}>
       <div {...className('left-nav')}>
