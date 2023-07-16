@@ -5,6 +5,7 @@ import 'components/Button/_button.scss';
 export enum Variant {
   Black = 'black',
   White = 'white',
+  WhiteBordered = 'white-bordered',
 }
 export enum Size {
   Small = 'small',
@@ -17,6 +18,8 @@ interface Props {
   children?: ReactNode;
   size?: `${Size}`;
   onClick?: () => void;
+  rounded?: boolean;
+  isPaymentBtn?: boolean;
 }
 
 const className = BEMHelper('button');
@@ -26,9 +29,20 @@ const Button: React.FC<Props> = ({
   children,
   size = Size.Medium,
   onClick,
+  rounded = false,
+  isPaymentBtn = false,
 }) => {
   return (
-    <button type="button" onClick={onClick} {...className('', [variant, size])}>
+    <button
+      type="button"
+      onClick={onClick}
+      {...className('', [
+        variant,
+        size,
+        rounded ? 'rounded' : '',
+        isPaymentBtn ? 'is-payment' : '',
+      ])}
+    >
       {children}
     </button>
   );

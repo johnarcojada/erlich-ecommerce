@@ -35,6 +35,11 @@ import InstaImg2 from './item-images/insta-img-2.jpg';
 import InstaImg3 from './item-images/insta-img-3.jpg';
 import InstaImg4 from './item-images/insta-img-4.jpg';
 import InstaImg5 from './item-images/insta-img-5.jpg';
+import LogoVisa from './payment-icons/visa.png';
+import LogoMastercard from './payment-icons/master-card.png';
+import LogoMaestro from './payment-icons/maestro.png';
+import LogoAmericanExpress from './payment-icons/american-express.png';
+import LogoPaypal from './payment-icons/paypal.png';
 
 export {
   Logo,
@@ -74,4 +79,9 @@ export {
   InstaImg3,
   InstaImg4,
   InstaImg5,
+  LogoVisa,
+  LogoMastercard,
+  LogoMaestro,
+  LogoAmericanExpress,
+  LogoPaypal,
 };
