@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/Inspo/_inspo.scss';
+import 'components/pages/LandingPage/Inspo/_inspo.scss';
 import {
   InstaImg1,
   InstaImg2,

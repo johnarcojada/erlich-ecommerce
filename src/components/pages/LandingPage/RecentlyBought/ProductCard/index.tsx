@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/RecentlyBought/ProductCard/_productCard.scss';
+import 'components/pages/LandingPage/RecentlyBought/ProductCard/_productCard.scss';
 import Button from 'components/Button';
 import { IconBag } from 'assets/images';
 

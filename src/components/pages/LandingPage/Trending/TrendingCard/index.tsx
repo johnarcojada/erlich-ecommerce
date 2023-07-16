@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/Trending/TrendingCard/_trendingCard.scss';
+import 'components/pages/LandingPage/Trending/TrendingCard/_trendingCard.scss';
 
 interface Props {
   name: string;
