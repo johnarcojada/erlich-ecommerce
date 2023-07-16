@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 
-import CartPage from 'components/CartPage';
-import LandingPage from 'components/LandingPage';
+import CartPage from 'components/pages/CartPage';
+import LandingPage from 'components/pages/LandingPage';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 

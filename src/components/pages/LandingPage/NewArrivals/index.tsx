@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/NewArrivals/_newArrivals.scss';
+import 'components/pages/LandingPage/NewArrivals/_newArrivals.scss';
 import { NewArrivalsBg } from 'assets/images';
 import Button from 'components/Button';
 

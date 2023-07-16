@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/VipExclusive/_vipExclusive.scss';
+import 'components/pages/LandingPage/VipExclusive/_vipExclusive.scss';
 import Button from 'components/Button';
 
 const className = BEMHelper('vip-exclusive-section');

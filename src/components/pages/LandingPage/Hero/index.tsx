@@ -12,7 +12,7 @@ import {
   IconChevronLeftWhite,
   IconChevronRightWhite,
 } from 'assets/images';
-import 'components/Hero/_hero.scss';
+import 'components/pages/LandingPage/Hero/_hero.scss';
 
 const className = BEMHelper('hero');
 

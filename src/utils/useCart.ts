@@ -1,5 +1,5 @@
 import { useLocalStorage } from 'usehooks-ts';
-import { products, Product } from 'utils//data';
+import { products, Product } from 'utils/data';
 
 interface SavedItem {
   product_id: number;

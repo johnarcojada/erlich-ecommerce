@@ -9,7 +9,7 @@ import {
   LogoMastercard,
   LogoAmericanExpress,
 } from 'assets/images';
-import 'components/CartPage/_cartPage.scss';
+import 'components/pages/CartPage/_cartPage.scss';
 import useCart from 'utils/useCart';
 import Navbar from 'components/Navbar';
 

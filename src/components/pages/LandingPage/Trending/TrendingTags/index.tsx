@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/Trending/TrendingTags/_trendingTags.scss';
+import 'components/pages/LandingPage/Trending/TrendingTags/_trendingTags.scss';
 import Tag from 'components/Tag';
 
 const className = BEMHelper('trending-tags-section');

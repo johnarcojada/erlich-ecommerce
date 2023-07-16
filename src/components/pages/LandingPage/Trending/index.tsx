@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/Trending/_trending.scss';
+import 'components/pages/LandingPage/Trending/_trending.scss';
 import TrendingCard from './TrendingCard';
 import {
   WinterFashion,

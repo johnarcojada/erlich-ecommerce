@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/Deals/_deals.scss';
+import 'components/pages/LandingPage/Deals/_deals.scss';
 import Button from 'components/Button';
 
 const className = BEMHelper('deals-section');

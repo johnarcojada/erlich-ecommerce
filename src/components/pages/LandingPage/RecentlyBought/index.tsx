@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import 'components/RecentlyBought/_recentlyBought.scss';
+import 'components/pages/LandingPage/RecentlyBought/_recentlyBought.scss';
 import ProductCard from './ProductCard';
 import { products, Product } from 'utils/data';
 import useCart from 'utils/useCart';
