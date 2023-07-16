@@ -51,7 +51,16 @@
   }
 
   &__right-nav-icon-btn {
-    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    .right-nav-icon {
+      cursor: pointer;
+    }
+    &:hover {
+      .right-nav-icon {
+        filter: brightness(0);
+      }
+    }
   }
 
   &__right-nav-button {

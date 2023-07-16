@@ -1,0 +1,54 @@
+@import 'assets/styles/_theme.scss';
+
+.bag-preview {
+  position: absolute;
+  top: calc(100% + pxToRem(8px));
+  z-index: 99;
+  padding: pxToRem(32px);
+  background-color: $white;
+  right: pxToRem(-24px);
+  border: 1px solid $gray;
+  width: pxToRem(360px);
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: pxToRem(16px);
+    border-bottom: 1px solid $gray;
+    padding-bottom: pxToRem(16px);
+    margin-bottom: pxToRem(16px);
+  }
+  &__item-image-wrapper {
+    grid-column: span 2 / span 2;
+    img {
+      width: 100%;
+    }
+  }
+  &__item-details {
+    grid-column: span 4 / span 4;
+  }
+  &__item-detail {
+    display: block;
+    font-size: pxToRem(12px);
+    &--name,
+    &--price {
+      font-weight: map-get($font-weight, semibold);
+      margin: pxToRem(8px) 0;
+    }
+  }
+  &__summary {
+    .button {
+      width: 100%;
+    }
+  }
+  &__summary-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: pxToRem(16px);
+  }
+  &__summary-detail-text {
+    font-size: pxToRem(14px);
+    font-weight: map-get($font-weight, semibold);
+    color: $black;
+  }
+}

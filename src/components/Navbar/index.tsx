@@ -11,11 +11,13 @@ import {
   IconUSFlag,
   IconChevronRight,
 } from 'assets/images';
+import BagPreview from './BagPreview';
 
 const className = BEMHelper('navbar-container');
 
 const Navbar: React.FC = () => {
   const [selectedLink, setSelectedLink] = useState('Women');
+  const [isBagSelected, setIsBagSelected] = useState(false);
   const navlinks = [
     {
       label: 'Women',
@@ -34,6 +36,8 @@ const Navbar: React.FC = () => {
       link: '#',
     },
   ];
+
+  const onBagIconClick = () => {};
 
   return (
     <div {...className('')}>
@@ -54,19 +58,29 @@ const Navbar: React.FC = () => {
       </div>
       <div {...className('right-nav')}>
         <span {...className('right-nav-icon-btn')}>
-          <img src={IconUser} alt="Icon User" />
+          <img src={IconUser} alt="Icon User" className="right-nav-icon" />
         </span>
         <span {...className('right-nav-icon-btn')}>
-          <img src={IconBag} alt="Icon Bag" />
+          <img
+            src={IconBag}
+            alt="Icon Bag"
+            className="right-nav-icon"
+            onClick={() => setIsBagSelected(!isBagSelected)}
+          />
+          {isBagSelected && <BagPreview />}
         </span>
         <span {...className('right-nav-icon-btn')}>
-          <img src={IconHeart} alt="Icon Heart" />
+          <img src={IconHeart} alt="Icon Heart" className="right-nav-icon" />
         </span>
         <span {...className('right-nav-icon-btn')}>
-          <img src={IconHeadset} alt="Icon Headset" />
+          <img
+            src={IconHeadset}
+            alt="Icon Headset"
+            className="right-nav-icon"
+          />
         </span>
         <span {...className('right-nav-icon-btn')}>
-          <img src={IconSearch} alt="Icon Search" />
+          <img src={IconSearch} alt="Icon Search" className="right-nav-icon" />
         </span>
         <button {...className('right-nav-button')}>
           <img src={IconUSFlag} alt="Icon Search" />
