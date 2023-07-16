@@ -2,7 +2,7 @@
 
 .cart-page {
   width: 100%;
-  padding: pxToRem(32px);
+  padding: pxToRem(120px) pxToRem(32px) pxToRem(32px) pxToRem(32px);
   max-width: 1440px;
   margin: 0 auto;
   &__header {
@@ -59,6 +59,7 @@
     gap: pxToRem(24px);
     border-bottom: 1px solid $gray;
     padding-bottom: pxToRem(16px);
+    margin-top: pxToRem(24px);
   }
   &__order-list-item-image-wrapper {
     grid-column: span 3 / span 3;

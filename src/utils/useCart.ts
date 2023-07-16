@@ -1,5 +1,5 @@
 import { useLocalStorage } from 'usehooks-ts';
-import { products, Product } from 'utils/data.ts';
+import { products, Product } from 'utils//data';
 
 interface SavedItem {
   product_id: number;
@@ -11,7 +11,7 @@ const useCart = () => {
 
   const cartItemProducts = cartItems.map(cartItem => {
     return {
-      product: products.find<Product>(
+      product: products.find(
         (product: Product) => cartItem.product_id === product.product_id
       ),
       quantity: cartItem.quantity,
@@ -45,18 +45,19 @@ const useCart = () => {
     setCartItems(filteredCartItems);
   };
 
-  const subtotal = cartItemProducts.reduce(item => {
-    if (item) {
-      return item.product.price * item.quantity;
-    }
-    return 0;
-  }, 0);
+  const subtotal = cartItemProducts.reduce(
+    (a, c) => a + (c.product?.price || 0) * c.quantity,
+    0
+  );
+
+  const quantity = cartItemProducts.reduce((a, c) => a + c.quantity, 0);
 
   return {
     items: cartItemProducts,
     addItem,
     removeItem,
     subtotal,
+    quantity,
   };
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BEMHelper from 'react-bem-helper';
+import { useNavigate } from 'react-router-dom';
 import 'components/Navbar/_navbar.scss';
 import {
   Logo,
@@ -16,6 +17,7 @@ import BagPreview from './BagPreview';
 const className = BEMHelper('navbar-container');
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
   const [selectedLink, setSelectedLink] = useState('Women');
   const [isBagSelected, setIsBagSelected] = useState(false);
   const navlinks = [
@@ -52,7 +54,11 @@ const Navbar: React.FC = () => {
         ))}
       </div>
       <div {...className('logo-wrapper')}>
-        <img src={Logo} {...className('logo-img')} />
+        <img
+          src={Logo}
+          {...className('logo-img')}
+          onClick={() => navigate('/')}
+        />
       </div>
       <div {...className('right-nav')}>
         <span {...className('right-nav-icon-btn')}>

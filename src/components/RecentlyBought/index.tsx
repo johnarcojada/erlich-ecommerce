@@ -3,13 +3,12 @@ import BEMHelper from 'react-bem-helper';
 import 'components/RecentlyBought/_recentlyBought.scss';
 import ProductCard from './ProductCard';
 import { products, Product } from 'utils/data';
-import useCart from 'utils//useCart';
+import useCart from 'utils/useCart';
 
 const className = BEMHelper('recently-bought-section');
 
 const RecentlyBought: React.FC = () => {
-  const { addItem, items } = useCart();
-  console.log(items);
+  const { addItem } = useCart();
   return (
     <div {...className('')}>
       <h1 {...className('title')}>Recently Bought</h1>
