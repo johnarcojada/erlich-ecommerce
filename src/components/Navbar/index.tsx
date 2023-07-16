@@ -13,11 +13,13 @@ import {
   IconChevronRight,
 } from 'assets/images';
 import BagPreview from './BagPreview';
+import useCart from 'utils/useCart';
 
 const className = BEMHelper('navbar-container');
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
+  const { quantity } = useCart();
   const [selectedLink, setSelectedLink] = useState('Women');
   const [isBagSelected, setIsBagSelected] = useState(false);
   const navlinks = [
@@ -71,6 +73,9 @@ const Navbar: React.FC = () => {
             className="right-nav-icon"
             onClick={() => setIsBagSelected(!isBagSelected)}
           />
+          {quantity > 0 && (
+            <span {...className('notification-badge')}>{quantity}</span>
+          )}
           {isBagSelected && <BagPreview />}
         </span>
         <span {...className('right-nav-icon-btn')}>

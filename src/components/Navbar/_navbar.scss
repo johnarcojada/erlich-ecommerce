@@ -33,6 +33,22 @@
     }
   }
 
+  &__notification-badge {
+    height: pxToRem(14px);
+    width: pxToRem(14px);
+    color: $white;
+    background-color: $red;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: pxToRem(-6px);
+    right: pxToRem(-6px);
+    font-size: pxToRem(10px);
+    font-weight: map-get($font-weight, medium);
+  }
+
   &__logo-wrapper {
     display: flex;
     align-items: center;
