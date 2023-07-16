@@ -2,10 +2,25 @@
 
 .tag {
   border-radius: 999px;
-  padding: pxToRem(10px) pxToRem(20px);
   display: inline-block;
-  border: 1px solid $black;
+  border-style: solid;
+  border-width: 1px;
   cursor: pointer;
-  font-weight: map-get($font-weight, semibold);
   user-select: none;
+
+  &--primary {
+    border-color: $black;
+    font-weight: map-get($font-weight, semibold);
+  }
+  &--secondary {
+    border-color: $gray;
+    font-weight: map-get($font-weight, medium);
+  }
+  &--small {
+    padding: pxToRem(4px) pxToRem(8px);
+    font-size: pxToRem(10px);
+  }
+  &--regular {
+    padding: pxToRem(10px) pxToRem(20px);
+  }
 }
